@@ -9,8 +9,15 @@ import org.junit.Test;
 
 public class SampleServiceTest {
     @Test
-    public void testSomeLibraryMethod() {
+    public void TestExec01() {
     	SampleService service = new SampleService();
         assertNull("someLibraryMethod should return 'true'", service.search());
+
+        assertNotNull("someLibraryMethod should return 'true'", service.executeFirst());
+
+        assertNotNull("someLibraryMethod should return 'true'", service.executeSecond());
+
+        assertNotNull("someLibraryMethod should return 'true'", service.executeFinish());
+
     }
 }

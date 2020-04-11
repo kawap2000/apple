@@ -19,7 +19,7 @@ public class SampleService {
 	}
 
 	public String executeFirst() {
-		return batch02.exec();
+		return batch01.exec();
 	}
 
 	public String executeSecond() {
@@ -27,6 +27,6 @@ public class SampleService {
 	}
 
 	public String executeFinish() {
-		return batch02.exec();
+		return batch03.exec();
 	}
 }
