@@ -2,15 +2,15 @@ package sample03.bat.service;
 
 import java.util.List;
 
-import sample03.bat.batchService.Batch01Service;
-import sample03.bat.batchService.Batch02Service;
-import sample03.bat.batchService.Batch03Service;
+import sample03.mst.service.BatchM01Service;
+import sample03.mst.service.BatchM02Service;
+import sample03.mst.service.BatchM03Service;
 
 public class SampleService {
 
-	private Batch01Service batch01 = new Batch01Service();
-	private Batch02Service batch02 = new Batch02Service();
-	private Batch03Service batch03 = new Batch03Service();
+	private BatchM01Service batch01 = new BatchM01Service();
+	private BatchM02Service batch02 = new BatchM02Service();
+	private BatchM03Service batch03 = new BatchM03Service();
 
 	public List<String> search() {
 		List<String> result = null;
