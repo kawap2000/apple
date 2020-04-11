@@ -1,4 +1,4 @@
-package sample03.service;
+package sample03.bat.service;
 
 public class SampleService {
 

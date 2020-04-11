@@ -1,4 +1,4 @@
-package sample03.dao;
+package sample03.bat.dao;
 
 public class Mast01Dao {
 
