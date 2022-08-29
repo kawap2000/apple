@@ -1,5 +1,6 @@
 package sample03.bat.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import sample03.mst.service.BatchM01Service;
@@ -13,7 +14,17 @@ public class SampleService {
 	private BatchM03Service batch03 = new BatchM03Service();
 
 	public List<String> search() {
-		List<String> result = null;
+		String[] TABLE01 = {
+				"abcd01",
+				"abcd02",
+				"abcd03",
+				"abcd04",
+				"abcd05",
+		};
+		List<String> result = new ArrayList<String>();
+		for (String string : TABLE01) {
+			result.add(string);
+		}
 
 		return result;
 	}
