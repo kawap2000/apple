@@ -14,18 +14,16 @@ public class SampleService {
 	private BatchM03Service batch03 = new BatchM03Service();
 
 	public List<String> search() {
-		String[] TABLE = {
-				"abcde",
-				"fghij",
-				"klmno",
-				"pqrst",
-				"uvwxy"
+		String[] TABLE01 = {
+				"abcd01",
+				"abcd02",
+				"abcd03",
+				"abcd04",
+				"abcd05",
 		};
-		List<String> result = null;
-		result = new ArrayList<String>();
-		for (String string : TABLE) {
+		List<String> result = new ArrayList<String>();
+		for (String string : TABLE01) {
 			result.add(string);
-			
 		}
 
 		return result;
