@@ -9,6 +9,7 @@ import sample03.mst.service.BatchM03Service;
 import sample03.mst.service.BatchM04Service;
 import sample03.mst.service.BatchM05Service;
 import sample03.mst.service.BatchM06Service;
+import sample03.mst.service.BatchM07Service;
 
 public class SampleService {
 
@@ -19,6 +20,7 @@ public class SampleService {
 	// devA 独自コーディング
 	private BatchM05Service batch05 = new BatchM05Service();
 	private BatchM06Service batch06 = new BatchM06Service();
+	private BatchM07Service batch07 = new BatchM07Service();
 	
 
 	public List<String> search() {
