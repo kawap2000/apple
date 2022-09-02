@@ -7,6 +7,7 @@ import sample03.mst.service.BatchM01Service;
 import sample03.mst.service.BatchM02Service;
 import sample03.mst.service.BatchM03Service;
 import sample03.mst.service.BatchM04Service;
+import sample03.mst.service.BatchM05Service;
 
 public class SampleService {
 
@@ -14,6 +15,9 @@ public class SampleService {
 	private BatchM02Service batch02 = new BatchM02Service();
 	private BatchM03Service batch03 = new BatchM03Service();
 	private BatchM04Service batch04 = new BatchM04Service();
+	// devA 独自コーディング
+	private BatchM05Service batch05 = new BatchM05Service();
+	
 
 	public List<String> search() {
 		String[] TABLE01 = {
@@ -46,5 +50,10 @@ public class SampleService {
 
 	public String executeExtFinish() {
 		return batch04.exec();
+	}
+
+	// devA 独自コーディング
+	public String executeExt02() {
+		return batch05.exec();
 	}
 }
