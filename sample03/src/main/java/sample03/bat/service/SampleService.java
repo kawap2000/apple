@@ -8,6 +8,7 @@ import sample03.mst.service.BatchM02Service;
 import sample03.mst.service.BatchM03Service;
 import sample03.mst.service.BatchM04Service;
 import sample03.mst.service.BatchM05Service;
+import sample03.mst.service.BatchM06Service;
 
 public class SampleService {
 
@@ -17,6 +18,7 @@ public class SampleService {
 	private BatchM04Service batch04 = new BatchM04Service();
 	// devA 独自コーディング
 	private BatchM05Service batch05 = new BatchM05Service();
+	private BatchM06Service batch06 = new BatchM06Service();
 	
 
 	public List<String> search() {
@@ -55,5 +57,9 @@ public class SampleService {
 	// devA 独自コーディング
 	public String executeExt02() {
 		return batch05.exec();
+	}
+
+	public String executeExt03() {
+		return batch06.exec();
 	}
 }
